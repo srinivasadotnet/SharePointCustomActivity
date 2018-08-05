@@ -1,4 +1,4 @@
-SharePointCustomActivity
+# SharePointCustomActivity
 
 SharePoint Custom Activities is a reusable UI Path component which can be used by any RPA developer to reduce the effort of SharePoint Automation.
 
