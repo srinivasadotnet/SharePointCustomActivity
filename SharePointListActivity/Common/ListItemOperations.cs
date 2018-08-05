@@ -1,8 +1,10 @@
 ﻿using Microsoft.SharePoint.Client;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
-namespace SPListCustomActivity.Common
+namespace SarePointCustomActivities.Common
 {
     public class ListItemOperations : IListOperations
     {
@@ -15,6 +17,19 @@ namespace SPListCustomActivity.Common
         /// The list
         /// </summary>
         List list;
+
+        /// <summary>
+        /// The IsDocumentLibrary
+        /// </summary>S
+        public bool IsDocumentLibrary
+        {
+            get
+            {
+                clientContext.Load(list, li => li.BaseType);
+                clientContext.ExecuteQuery();
+                return list.BaseType == BaseType.DocumentLibrary;
+            }
+        }
 
         /// <summary>
         /// The ListItemOperations Constructor 
@@ -38,6 +53,22 @@ namespace SPListCustomActivity.Common
             ListItem listItem = list.AddItem(itemCreateInfo);
             listItem = SetListItemModel(listItem, listItemValues);
             listItem.Update();
+            clientContext.ExecuteQuery();
+        }
+
+        /// <summary>
+        /// The CreateListItem
+        /// </summary>
+        /// <param name="listItem">The listItem</param>
+        public void UploadDocumentItem(string sourceFilePath)
+        {
+            clientContext.Load(list.RootFolder);
+            clientContext.ExecuteQuery();
+            var targetFileUrl = String.Format("{0}/{1}", list.RootFolder.ServerRelativeUrl.ToString(), Path.GetFileName(sourceFilePath));
+            using (var fileStream = new FileStream(sourceFilePath, FileMode.Open))
+            {
+                Microsoft.SharePoint.Client.File.SaveBinaryDirect(clientContext, targetFileUrl, fileStream, true);
+            }
             clientContext.ExecuteQuery();
         }
 
@@ -70,7 +101,7 @@ namespace SPListCustomActivity.Common
         /// <returns>The ListItemCollection</returns>
         public ListItemCollection GetListItems()
         {
-            CamlQuery camlQuery = new CamlQuery();
+            Microsoft.SharePoint.Client.CamlQuery camlQuery = new CamlQuery();
             ListItemCollection collListItem = list.GetItems(camlQuery);
             clientContext.Load(collListItem);
             clientContext.ExecuteQuery();

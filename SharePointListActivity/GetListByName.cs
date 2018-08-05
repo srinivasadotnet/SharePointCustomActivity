@@ -1,12 +1,14 @@
 ﻿using Microsoft.SharePoint.Client;
+using SarePointCustomActivities.Common;
+using System;
 using System.Activities;
 using System.ComponentModel;
+using System.Data;
 using System.Security;
-using SPListCustomActivity.Common;
 
-namespace SPListCustomActivity
+namespace SarePointCustomActivities
 {
-    public class SPListActivity : CodeActivity
+    public class GetListByName : CodeActivity
     {
         /// <summary>
         /// The SharePointSiteUri
@@ -30,10 +32,18 @@ namespace SPListCustomActivity
         public InArgument<string> Password { get; set; }
 
         /// <summary>
-        /// The SPAvailableLists
+        /// The List Name
+        /// </summary>
+        [Category("Input")]
+        [RequiredArgument]
+        public InArgument<string> ListName { get; set; }
+
+        /// <summary>
+        /// The ListItems
         /// </summary>
         [Category("Output")]
-        public OutArgument<ListCollection> SPAvailableLists { get; set; }
+        [RequiredArgument]
+        public OutArgument<DataTable> ListItems { get; set; }
 
         /// <summary>
         /// The Execute
@@ -42,6 +52,7 @@ namespace SPListCustomActivity
         protected override void Execute(CodeActivityContext context)
         {
             var userName = UserName.Get(context);
+            var listName = ListName.Get(context);
             var securePassword = new SecureString();
 
             foreach (char c in Password.Get(context))
@@ -52,8 +63,8 @@ namespace SPListCustomActivity
             using (var clientContext = new ClientContext(SharePointSiteUri.Get(context)))
             {
                 clientContext.Credentials = new SharePointOnlineCredentials(userName, securePassword);
-                var listItemOperations = new ListItemOperations(clientContext, null);
-                SPAvailableLists.Set(context, listItemOperations.GetListCollection());
+                var listItemOperations = new ListItemOperations(clientContext, listName);
+                ListItems.Set(context, DataHelperUtility.GetDataTableFromListItemCollection(listItemOperations.GetListItems()));
             }
         }
     }

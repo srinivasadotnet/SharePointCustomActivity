@@ -1,7 +1,7 @@
 ﻿using Microsoft.SharePoint.Client;
 using System.Collections.Generic;
 
-namespace SPListCustomActivity.Common
+namespace SarePointCustomActivities.Common
 {
     public interface IListOperations
     {
@@ -41,5 +41,11 @@ namespace SPListCustomActivity.Common
         /// <param name="itemId"></param>
         /// <returns></returns>
         ListItem GetListItemsById(int itemId);
+
+        /// <summary>
+        /// The UploadDocumentItem
+        /// </summary>
+        /// <param name="sourceFilePath"></param>
+        void UploadDocumentItem(string sourceFilePath);
     }
 }

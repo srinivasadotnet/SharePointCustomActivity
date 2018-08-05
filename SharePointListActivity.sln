@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPListCustomActivity", "SharePointListActivity\SPListCustomActivity.csproj", "{1C33AF4A-372B-4862-A87D-3797AA7B4774}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SarePointCustomActivities", "SharePointListActivity\SarePointCustomActivities.csproj", "{1C33AF4A-372B-4862-A87D-3797AA7B4774}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

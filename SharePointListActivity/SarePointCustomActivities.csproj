@@ -7,8 +7,8 @@
     <ProjectGuid>{1C33AF4A-372B-4862-A87D-3797AA7B4774}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SPListCustomActivity</RootNamespace>
-    <AssemblyName>SPListCustomActivity</AssemblyName>
+    <RootNamespace>SarePointCustomActivities</RootNamespace>
+    <AssemblyName>SarePointCustomActivities</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -87,9 +87,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\DataHelperUtility.cs" />
     <Compile Include="Common\IListOperations.cs" />
     <Compile Include="Common\ListItemOperations.cs" />
-    <Compile Include="SPListActivity.cs" />
+    <Compile Include="InsertListItems.cs" />
+    <Compile Include="UploadDocumentToLibrary.cs" />
+    <Compile Include="GetListByName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
