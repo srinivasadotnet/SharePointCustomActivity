@@ -7,8 +7,8 @@
     <ProjectGuid>{1C33AF4A-372B-4862-A87D-3797AA7B4774}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SarePointCustomActivities</RootNamespace>
-    <AssemblyName>SarePointCustomActivities</AssemblyName>
+    <RootNamespace>SharePointCustomActivities</RootNamespace>
+    <AssemblyName>SharePointCustomActivities</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
