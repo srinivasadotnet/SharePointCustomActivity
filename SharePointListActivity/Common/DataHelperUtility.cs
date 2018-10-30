@@ -2,7 +2,7 @@
 using System;
 using System.Data;
 
-namespace SarePointCustomActivities.Common
+namespace SharePointCustomActivities.Common
 {
     public static class DataHelperUtility
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.SharePoint.Client;
 using System.Collections.Generic;
 
-namespace SarePointCustomActivities.Common
+namespace SharePointCustomActivities.Common
 {
     public interface IListOperations
     {

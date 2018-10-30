@@ -1,5 +1,5 @@
 ﻿using Microsoft.SharePoint.Client;
-using SarePointCustomActivities.Common;
+using SharePointCustomActivities.Common;
 using System;
 using System.Activities;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Security;
 
-namespace SarePointCustomActivities
+namespace SharePointCustomActivities
 {
     public class InsertListItems : CodeActivity
     {

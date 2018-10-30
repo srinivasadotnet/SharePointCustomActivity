@@ -1,12 +1,12 @@
 ﻿using Microsoft.SharePoint.Client;
-using SarePointCustomActivities.Common;
+using SharePointCustomActivities.Common;
 using System;
 using System.Activities;
 using System.ComponentModel;
 using System.Data;
 using System.Security;
 
-namespace SarePointCustomActivities
+namespace SharePointCustomActivities
 {
     public class GetListByName : CodeActivity
     {
