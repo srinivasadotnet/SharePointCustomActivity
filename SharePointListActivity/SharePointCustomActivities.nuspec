@@ -4,13 +4,13 @@
     <id>$id$</id>
     <version>$version$</version>
     <title>$title$</title>
-    <authors>$author$</authors>
+    <authors>k0d3r</authors>
     <owners>$author$</owners>
     <licenseUrl>https://github.com/srinivasadotnet/SharePointCustomActivity/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/srinivasadotnet/SharePointCustomActivity</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>file://content/images/nugetIcon.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>SharePoint Custom Activities for UI Path Studio</description>
     <releaseNotes>SharePoint CustomActivities</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>SharePointCustomActivities UIPathSharePoint</tags>
