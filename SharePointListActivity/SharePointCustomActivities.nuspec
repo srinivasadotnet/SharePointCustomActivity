@@ -15,4 +15,9 @@
     <copyright>Copyright 2018</copyright>
     <tags>SharePointCustomActivities UIPathSharePoint</tags>
   </metadata>
+  <dependencies>
+    <group>
+      <dependency id="Microsoft.SharePointOnline.CSOM" version="16.1.7813.1200" />
+    </group>
+  </dependencies>
 </package>
