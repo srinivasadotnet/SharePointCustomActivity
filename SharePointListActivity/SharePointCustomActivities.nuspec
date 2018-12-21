@@ -8,7 +8,7 @@
     <owners>$author$</owners>
     <licenseUrl>https://github.com/srinivasadotnet/SharePointCustomActivity/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/srinivasadotnet/SharePointCustomActivity</projectUrl>
-    <iconUrl>file://content/images/nugetIcon.png</iconUrl>
+    <iconUrl>https://github.com/srinivasadotnet/SharePointCustomActivity/blob/master/SharePointListActivity/medium.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>SharePoint Custom Activities for UI Path Studio</description>
     <releaseNotes>SharePoint CustomActivities</releaseNotes>
