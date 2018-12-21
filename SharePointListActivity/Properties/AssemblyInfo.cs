@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SharePointListActivity")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("SharePointCustomActivities")]
+[assembly: AssemblyDescription("SharePoint Custom Activities for UI Path")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SharePointListActivity")]
+[assembly: AssemblyCompany("k0d3r")]
+[assembly: AssemblyProduct("SharePoint Custom Activity")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

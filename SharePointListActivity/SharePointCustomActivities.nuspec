@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/srinivasadotnet/SharePointCustomActivity/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/srinivasadotnet/SharePointCustomActivity</projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>SharePoint CustomActivities</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>SharePointCustomActivities UIPathSharePoint</tags>
+  </metadata>
+</package>
