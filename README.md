@@ -3,7 +3,7 @@
 SharePoint Custom Activities is a reusable UI Path component which can be used by any RPA developer to reduce the effort of SharePoint Automation.
 
 ## Requirements
-Visual Studio 2017 required to complile this binary.
+Visual Studio 2017 required to compile this binary.
 
 ## Activities
 
